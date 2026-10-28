@@ -1,0 +1,17 @@
+# Llaves y configuración local
+.env
+
+# Índice generado (se crea con: python ingest.py)
+data/index/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
+
+# Editores / sistema
+.vscode/
+.idea/
+.DS_Store

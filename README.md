@@ -2,11 +2,13 @@
 
 Asistente de preguntas y respuestas sobre **finanzas personales y banca en México** construido con la técnica **RAG (Retrieval-Augmented Generation)**. El sistema busca primero en una base de conocimiento propia y después le pasa los fragmentos encontrados a un modelo de lenguaje para que redacte una respuesta **citando sus fuentes**.
 
+![Demo de la app](captura.png)
+
 Funciona con dos proveedores de LLM intercambiables:
 
 | Proveedor | Modelo por defecto | Costo |
 |---|---|---|
-| **Groq** | `llama-3.3-70b-versatile` | Plan gratuito |
+| **Groq** | `openai/gpt-oss-20b` | Plan gratuito |
 | **Claude (Anthropic)** | `claude-haiku-5-5` | De pago por uso |
 | **Sin LLM** | — | Gratis, solo muestra los fragmentos encontrados |
 

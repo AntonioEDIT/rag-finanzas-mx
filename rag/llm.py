@@ -13,7 +13,7 @@ import os
 from abc import ABC, abstractmethod
 
 DEFAULT_CLAUDE_MODEL = "claude-haiku-5-5"
-DEFAULT_GROQ_MODEL = "llama-3.3-70b-versatile"
+DEFAULT_GROQ_MODEL = "openai/gpt-oss-20b"
 
 
 class LLMProvider(ABC):
@@ -48,7 +48,7 @@ class ClaudeProvider(LLMProvider):
 class GroqProvider(LLMProvider):
     name = "groq"
 
-    def __init__(self, model: str | None = None, max_tokens: int = 800):
+    def __init__(self, model: str | None = None, max_tokens: int = 2000):
         from groq import Groq  # import perezoso
         if not os.getenv("GROQ_API_KEY"):
             raise RuntimeError("Falta GROQ_API_KEY en el archivo .env")

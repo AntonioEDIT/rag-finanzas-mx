@@ -16,7 +16,7 @@ load_dotenv()
 st.set_page_config(page_title="RAG Finanzas MX", page_icon="💰", layout="centered")
 
 PROVIDERS = {
-    "Groq · Llama (gratis)": "groq",
+    "Groq · gpt-oss (gratis)": "groq",
     "Claude · Anthropic": "claude",
     "Sin LLM (solo búsqueda)": "none",
 }
